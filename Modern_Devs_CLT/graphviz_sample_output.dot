@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="ibu <= 40.5\nentropy = 1.999\nsamples = 2085\nvalue = [495, 529, 541, 520]\nclass = Lager"] ;
+1 [label="abv <= 0.054\nentropy = 1.671\nsamples = 1253\nvalue = [373, 22, 492, 366]\nclass = Lager"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="ibu <= 19.5\nentropy = 1.489\nsamples = 684\nvalue = [227, 13, 362, 82]\nclass = Lager"] ;
+1 -> 2 ;
+3 [label="entropy = 0.976\nsamples = 259\nvalue = [106, 0, 153, 0]\nclass = Lager"] ;
+2 -> 3 ;
+4 [label="entropy = 1.631\nsamples = 425\nvalue = [121, 13, 209, 82]\nclass = Lager"] ;
+2 -> 4 ;
+5 [label="abv <= 0.056\nentropy = 1.585\nsamples = 569\nvalue = [146, 9, 130, 284]\nclass = SP"] ;
+1 -> 5 ;
+6 [label="entropy = 1.628\nsamples = 156\nvalue = [36, 2, 62, 56]\nclass = Lager"] ;
+5 -> 6 ;
+7 [label="entropy = 1.51\nsamples = 413\nvalue = [110, 7, 68, 228]\nclass = SP"] ;
+5 -> 7 ;
+8 [label="ibu <= 59.0\nentropy = 1.533\nsamples = 832\nvalue = [122, 507, 49, 154]\nclass = IPA"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="abv <= 0.057\nentropy = 1.947\nsamples = 279\nvalue = [71, 86, 40, 82]\nclass = IPA"] ;
+8 -> 9 ;
+10 [label="entropy = 1.824\nsamples = 102\nvalue = [38, 28, 29, 7]\nclass = Ale"] ;
+9 -> 10 ;
+11 [label="entropy = 1.753\nsamples = 177\nvalue = [33, 58, 11, 75]\nclass = SP"] ;
+9 -> 11 ;
+12 [label="abv <= 0.094\nentropy = 1.096\nsamples = 553\nvalue = [51, 421, 9, 72]\nclass = IPA"] ;
+8 -> 12 ;
+13 [label="entropy = 0.842\nsamples = 481\nvalue = [45, 404, 7, 25]\nclass = IPA"] ;
+12 -> 13 ;
+14 [label="entropy = 1.336\nsamples = 72\nvalue = [6, 17, 2, 47]\nclass = SP"] ;
+12 -> 14 ;
+}
